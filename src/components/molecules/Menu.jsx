@@ -55,7 +55,7 @@ const Menu = () => {
                             href="/"
                             aria-label="Destined Estates"
                         >
-                            <img src={'/static/Logo_1.PNG'} alt="LOGO" width={300}  />
+                            <img src={'/static/Logo_1.png'} alt="LOGO" width={300}  />
                         </Link>
                         {/* 
                         className={classNames(
