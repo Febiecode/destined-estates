@@ -4,7 +4,7 @@ const headerNavLinks = [
         title: 'Who We Are',
         links: [
             { href: '/who-we-are', title: 'Who We Are' },
-            { href: '/why-destined-estate', title: 'Why Destined Estate' },
+            { href: '/why-destined-estates', title: 'Why Destined Estate' },
             { href: '/real-estate-presence', title: 'Real Estate Presence' },
             { href: '/leadership', title: 'Leadership' },
         ],
