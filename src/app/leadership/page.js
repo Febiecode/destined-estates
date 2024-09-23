@@ -1,21 +1,21 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Menu from '@/components/molecules/Menu'
 import Footer from '@/components/molecules/Footer'
-import Leadership from '@/components/pages/Leadership'
+import Leadership from '@/components/pages/Leadership';
 
 const page = () => {
-  return (
-    <div>
-                
-        
-                <div className="relative">
+    
+
+    return (
+        <div>
+            <div className="relative">
                 <Menu />
                 {/* HeroBanner below Menu */}
                 <div className="relative w-full h-[250px] overflow-hidden mb-1">
                     <div className="relative w-full flex transition-transform ease-in-out duration-1000">
                         <div className="w-full flex-shrink-0">
-                            <img src="/static/Herobanner/home2.jpg" alt="who we are" className="w-full h-[300px] object-cover" />
+                            <img src="/static/Assets/leadership.jpg" alt="who we are" className="w-full h-[300px] md:h-full  object-cover object-center" />
                             {/* Dark overlay on top of the image */}
                             <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                         </div>
@@ -26,17 +26,13 @@ const page = () => {
                         <h1 className="text-5xl lg:text-5xl font-bold pt-10 text-center font-playfair pb-3 z-20">Leadership</h1>
                     </div>
                 </div>
-
-
             </div>
-
-
 
             <Leadership />
 
             <Footer />
-    </div>
-  )
-}
+        </div>
+    );
+};
 
-export default page
+export default page;
