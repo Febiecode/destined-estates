@@ -74,7 +74,7 @@ const Leadership = () => {
           his own team of seasoned professionals. In 2023, Rufus had expanded his more than a
           decade + years of experience into an elite real estate firm named Destined Estates (OPC)
           Private Limited. Today Destined Estates exists to serve the elite clientele from all around
-          the world, to cater to their luxury property needs and wants. Rufus's passion for teaching
+          the world, to cater to their luxury property needs and wants. Rufus&#39;s passion for teaching
           others how to achieve success is realized through his team of highly coveted agents.
         </p>
       </motion.div>
