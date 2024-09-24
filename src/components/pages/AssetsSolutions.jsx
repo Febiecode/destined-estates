@@ -10,7 +10,7 @@ export default function AssetsSolutions() {
         <div className="min-h-screen bg-gray-100 p-6">
 
             <div className='mb-10 bg-white p-6 rounded-lg shadow-lg flex flex-col lg:flex-row items-center'>
-                <div className='lg:w-2/5 md:me-5'>
+                <div className='lg:w-2/5 md:me-5 my-14'>
                     {/* Lottie Animation */}
                     <Player
                         autoplay
