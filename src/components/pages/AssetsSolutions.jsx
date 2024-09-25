@@ -1,7 +1,7 @@
 // pages/real-estate-presence.js
 import { Player } from '@lottiefiles/react-lottie-player';
 import home1 from '../../../public/home1.json';
-import buyingSelling1 from '../../../public/buyingSelling1.json';
+import buyingSelling2 from '../../../public/buyingSelling3.json';
 import sales from '../../../public/sales.json';
 
 export default function AssetsSolutions() {
@@ -45,7 +45,7 @@ export default function AssetsSolutions() {
                     <Player
                         autoplay
                         loop
-                        src={buyingSelling1}
+                        src={buyingSelling2}
                         className="w-full max-w-md mx-auto mb-10"
                     />
                 </div>
