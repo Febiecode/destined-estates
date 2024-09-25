@@ -38,13 +38,13 @@ const headerNavLinks = [
             
         ],
     },
-    {
-        href: '/contacts',
-        title: 'Contacts',
-        links: [
+    // {
+    //     href: '/contacts',
+    //     title: 'Contacts',
+    //     links: [
             
-        ],
-    },
+    //     ],
+    // },
 ];
 
 export default headerNavLinks;
