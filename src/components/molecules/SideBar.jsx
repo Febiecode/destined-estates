@@ -35,7 +35,7 @@ export default function Sidebar() {
                 setScrolling(false);
             }
         };
-        
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -83,16 +83,17 @@ export default function Sidebar() {
                         exit="exit"
                         variants={variants}
                         className={classNames(
-                            'fixed inset-0 z-50 h-full w-full bg-white opacity-95 dark:bg-black overflow-y-scroll'
+                            'fixed inset-0 z-50 h-full w-full  opacity-95 bg-black overflow-y-scroll'
                         )}
                     >
-                        <header className="flex justify-between py-5 px-4">
-                        <Link
-                            href="/"
-                            aria-label="Destined Estates"
+                        <header
+                            className={classNames(
+                                "flex justify-between py-5 px-4 w-full fixed top-0 left-0 z-50 transition-all duration-300  bg-gray-100"
+                            )}
                         >
-                            <img src={'/static/Logo_1.png'} alt="LOGO" width={300}  />
-                        </Link>
+                            <Link href="/" aria-label="Destined Estates">
+                                <img src={'/static/Logo_1.png'} alt="LOGO" width={300} />
+                            </Link>
                             <button
                                 type="button"
                                 aria-label="toggle modal"
@@ -104,8 +105,8 @@ export default function Sidebar() {
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
                                     className={classNames(
-                                        'text-gray-900 dark:text-gray-100',
-                                        { 'text-white': scrolling } // Change color when scrolling
+                                        "transition-colors duration-300 text-gray-900 ", // Add transition for smooth color change
+
                                     )}
                                 >
                                     <path
@@ -116,13 +117,14 @@ export default function Sidebar() {
                                 </svg>
                             </button>
                         </header>
-                        <nav className="fixed mt-8 h-full w-full">
+
+                        <nav className="absolute top-36 h-full w-full">
                             <div key="Home" className="px-12 py-4">
                                 <Link
                                     href="/"
                                     onClick={() => setNavShow(!navShow)}
                                     className={classNames(
-                                        'horizontal-underline font-bold tracking-widest text-gray-900 text-2xl dark:text-gray-100',
+                                        'horizontal-underline font-bold tracking-widest  text-2xl text-gray-100',
                                         { 'horizontal-underline-active': pathName === '/' }
                                     )}
                                 >
@@ -136,47 +138,73 @@ export default function Sidebar() {
 
                                     return (
                                         <div key={title} className="relative w-full">
-                                            <button
-                                                onClick={() => toggleDropdown(title)}
-                                                className={classNames('w-full text-sm flex items-center justify-between py-4', {
-                                                    'horizontal-underline-active': active,
-                                                })}
-                                                aria-label={title}
-                                            >
-                                                <span className="font-semibold tracking-wide text-gray-900 dark:text-gray-100">
-                                                    {title}
-                                                </span>
-                                                {links.length > 0 && (
-                                                    <span
-                                                        className={`ml-2 transform transition-transform duration-300 ${openDropdowns[title] ? 'rotate-180' : 'rotate-0'
+                                            {/* Check if links is empty */}
+                                            {links.length === 0 ? (
+                                                // Render as a link when there are no child links
+                                                <Link
+                                                    href={href}
+                                                    className={classNames(
+                                                        'w-full text-sm flex items-center justify-between py-4',
+                                                        {
+                                                            'horizontal-underline-active': active,
+                                                        }
+                                                    )}
+                                                >
+                                                    <span className="font-semibold tracking-wide text-gray-100">
+                                                        {title}
+                                                    </span>
+                                                </Link>
+                                            ) : (
+                                                // Render as a dropdown when there are child links
+                                                <>
+                                                    <button
+                                                        onClick={() => toggleDropdown(title)}
+                                                        className={classNames(
+                                                            'w-full text-sm flex items-center justify-between py-4',
+                                                            {
+                                                                'horizontal-underline-active': active,
+                                                            }
+                                                        )}
+                                                        aria-label={title}
+                                                    >
+                                                        <span className="font-semibold tracking-wide text-gray-100">
+                                                            {title}
+                                                        </span>
+                                                        {/* Show arrow only if there are links */}
+                                                        {links.length > 0 && (
+                                                            <span
+                                                                className={`ml-2 transform transition-transform duration-300 text-gray-100 ${openDropdowns[title] ? 'rotate-180' : 'rotate-0'
+                                                                    }`}
+                                                            >
+                                                                <IoIosArrowDown size={20} />
+                                                            </span>
+                                                        )}
+                                                    </button>
+
+                                                    <div
+                                                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[title] ? 'max-h-screen' : 'max-h-0'
                                                             }`}
                                                     >
-                                                        <IoIosArrowDown size={20} />
-                                                    </span>
-                                                )}
-                                            </button>
-
-                                            <div
-                                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdowns[title] ? 'max-h-screen' : 'max-h-0'
-                                                    }`}
-                                            >
-                                                {links.length > 0 && (
-                                                    <div className="w-full">
-                                                        {links.map(({ href, title }) => (
-                                                            <Link
-                                                                key={title}
-                                                                href={href}
-                                                                className="block px-4 py-2 text-gray-900 dark:text-gray-100"
-                                                            >
-                                                                {title}
-                                                            </Link>
-                                                        ))}
+                                                        {links.length > 0 && (
+                                                            <div className="w-full">
+                                                                {links.map(({ href, title }) => (
+                                                                    <Link
+                                                                        key={title}
+                                                                        href={href}
+                                                                        className="block px-4 py-2 text-gray-100"
+                                                                    >
+                                                                        {title}
+                                                                    </Link>
+                                                                ))}
+                                                            </div>
+                                                        )}
                                                     </div>
-                                                )}
-                                            </div>
+                                                </>
+                                            )}
                                         </div>
                                     );
                                 })}
+
                             </div>
                         </nav>
                     </motion.div>
