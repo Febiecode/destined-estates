@@ -893,7 +893,7 @@ export default function CompanyServices() {
                             <h4 className="text-2xl lg:text-3xl font-semibold text-gray-700 mb-2">Mobile Presence</h4>
                             <p className="text-base text-gray-500 leading-relaxed">
                                 Prospective buyers will be able to access the same great search technology available on
-                                our website while on the go! Our website markets your property and our digital marketing
+                                our website while on the go&#33; Our website markets your property and our digital marketing
                                 campaign will ensure your property reaches to the elite buyers that you so desire.
                             </p>
                         </motion.div>
