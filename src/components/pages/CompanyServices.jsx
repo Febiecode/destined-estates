@@ -745,7 +745,7 @@ export default function CompanyServices() {
                                 >
                                     <Paper elevation={3} style={{ padding: '16px' }}>
                                         <Typography className="text-purple-950 font-semibold text-lg md:text-xl ">
-                                            Determine Your Home's Value
+                                            Determine Your Home&#39;s Value
                                         </Typography>
                                         <Typography>Work with your agent to set a competitive price by comparing similar properties in your area.</Typography>
                                     </Paper>
