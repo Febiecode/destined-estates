@@ -5,17 +5,17 @@ import Menu from '@/components/molecules/Menu'
 import Footer from '@/components/molecules/Footer'
 
 const page = () => {
-  return (
-    <div>
-                
-        
-                <div className="relative">
+    return (
+        <div>
+
+
+            <div className="relative">
                 <Menu />
                 {/* HeroBanner below Menu */}
-                <div className="relative w-full h-[250px] overflow-hidden mb-1">
+                <div className="relative w-full h-[250px] overflow-hidden">
                     <div className="relative w-full flex transition-transform ease-in-out duration-1000">
                         <div className="w-full flex-shrink-0">
-                            <img src="/static/Herobanner/home2.jpg" alt="who we are" className="w-full h-[300px] object-cover" />
+                            <img src="/static/Assets/home1.jpg" alt="who we are" className="w-full h-[400px] md:h-[300px] object-cover" />
                             {/* Dark overlay on top of the image */}
                             <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                         </div>
@@ -35,8 +35,8 @@ const page = () => {
             <RealEstatePresence />
 
             <Footer />
-    </div>
-  )
+        </div>
+    )
 }
 
 export default page
