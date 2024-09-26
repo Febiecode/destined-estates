@@ -464,7 +464,7 @@ export default function CompanyServices() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Seller’s Guide
+                    Seller  's Guide
                 </motion.h1>
 
                 <motion.h1
@@ -489,7 +489,7 @@ export default function CompanyServices() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                    From determining your home’s value to closing day, learn more about the home
+                    From determining your home  's value to closing day, learn more about the home
                     selling process.
                 </motion.p>
 
