@@ -57,7 +57,7 @@ export default function CompanyServices() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Buyer's guide
+                    Buyer&#39;s guide
                 </motion.h1>
 
                 <motion.h1
@@ -96,7 +96,7 @@ export default function CompanyServices() {
                         transition={{ duration: 1, ease: 'easeOut' }}
                     >
                         Buying a home can be one of the most exciting experiences of your life. This can be true if
-                        you've purchased several homes or you're preparing to buy the first time. With the right
+                        you&#39;ve purchased several homes or you&#39;re preparing to buy the first time. With the right
                         support system and the help of a trusted Destined professional, you can make the most
                         informed decisions.
                     </motion.li>
@@ -108,7 +108,7 @@ export default function CompanyServices() {
                     >
                         Our Destined professional breaks down the steps of buying a home so you can start the
                         process feeling confident and prepared. From developing your budget to signing your name
-                        on the dotted line, you'll find helpful tips right here.
+                        on the dotted line, you&#39;ll find helpful tips right here.
                     </motion.li>
 
 
@@ -464,7 +464,7 @@ export default function CompanyServices() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Seller  's Guide
+                    Seller&#39;s Guide
                 </motion.h1>
 
                 <motion.h1
@@ -489,7 +489,7 @@ export default function CompanyServices() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                    From determining your home  's value to closing day, learn more about the home
+                    From determining your home&#39;s value to closing day, learn more about the home
                     selling process.
                 </motion.p>
 
@@ -577,7 +577,7 @@ export default function CompanyServices() {
                                 >
                                     <div>
                                         <Typography component="span" className="text-purple-950 !font-semibold text-lg md:text-xl lg:text-2xl">
-                                            Determine Your Home's Value
+                                            Determine Your Home&#39;s Value
                                         </Typography>
                                         <Typography>Work with your agent to set a competitive price by comparing similar properties in your area.</Typography>
                                     </div>
