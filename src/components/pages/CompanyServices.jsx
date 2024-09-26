@@ -16,10 +16,6 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import OfferIcon from '@mui/icons-material/LocalOffer';
 import DoneIcon from '@mui/icons-material/Done';
 
-import { Player } from '@lottiefiles/react-lottie-player';
-
-import guide1 from '../../../public/guide1.json';
-import home2 from '../../../public/home2.json';
 
 
 const fadeIn = {
@@ -66,13 +62,7 @@ export default function CompanyServices() {
                     transition={{ duration: 0.8 }}
                 >
                     
-                        {/* Lottie Animation */}
-                        <Player
-                            autoplay
-                            loop
-                            src={guide1}
-                            className="w-full max-w-md mx-auto"
-                        />
+                        
                     
                 </motion.h1>
 
@@ -473,13 +463,7 @@ export default function CompanyServices() {
                     transition={{ duration: 0.8 }}
                 >
                     
-                        {/* Lottie Animation */}
-                        <Player
-                            autoplay
-                            loop
-                            src={home2}
-                            className="w-full max-w-md mx-auto"
-                        />
+                        
                     
                 </motion.h1>
 

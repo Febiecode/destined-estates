@@ -2,8 +2,7 @@
 import React from "react";
 import { ParallaxProvider, Parallax as ScrollParallax } from 'react-scroll-parallax';
 import { Parallax } from 'react-parallax';
-import { Player } from '@lottiefiles/react-lottie-player';
-import global from '../../../public/global.json';
+
 
 
 export default function WhyDestinedEstates() {
