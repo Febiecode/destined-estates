@@ -848,7 +848,7 @@ export default function CompanyServices() {
                     <h3 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">Choose a Destined Agent</h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
                         The best thing you can do to make the selling process as quick and as easy as possible is
-                        to choose a Destined Professional - and our Destined Agents are here to help every step of
+                        to choose a Destined Professional &#8211; and our Destined Agents are here to help every step of
                         the way. We can offer cutting edge technology, comprehensive marketing strategies, and
                         can effectively and efficiently guide you through the real estate process. We understand
                         the nuances of the market and can work with you to determine a competitive and fair price
