@@ -1,14 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const fadeIn = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 150 },
     visible: { opacity: 1, y: 0 },
 };
 
 const transition = {
-    duration: 0.5,
-    ease: [0.25, 0.1, 0.25, 1],
+    duration: 0.8,
+    ease: [0.5, 0.1, 0.5, 1],
 };
 
 const useSmallScreen = () => {
@@ -27,10 +28,10 @@ export default function RealEstatePresence() {
     return (
         <>
             {isSmallScreen ? (
-                <div className="bg-[#e5f3f9]">
+                <div className="bg-[#4c0018]">
                     {/* Local Insights Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#e5f3f9] md:bg-white my-10"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white my-10"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -49,11 +50,11 @@ export default function RealEstatePresence() {
 
                             {/* Text Section */}
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-3xl font-bold text-black mb-6 leading-tight">
+                                <h1 className="text-3xl font-bold text-white mb-6 leading-tight">
                                     Local Insights
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                                     Our on&#8211;the&#8211;ground presence in key locations around the city gives us knowledge of
                                     local market conditions and trends, as well as access to proprietary deal flow.
                                 </p>
@@ -63,7 +64,7 @@ export default function RealEstatePresence() {
 
                     {/* Strategic Flexibility Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#e5f3f9] md:bg-white"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -82,11 +83,11 @@ export default function RealEstatePresence() {
 
                             {/* Text Section */}
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-3xl font-bold text-black mb-6 leading-tight">
+                                <h1 className="text-3xl font-bold text-white mb-6 leading-tight">
                                     Strategic <br />Flexibility
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                                     Quickly scaling up to put our Real estate ideas into action, allows us to allocate
                                     luxury properties where it is otherwise scarce, acquire intellectual assets for
                                     effective deal closures and leverage our operating expertise, enhancing the value of
@@ -98,7 +99,7 @@ export default function RealEstatePresence() {
 
                     {/* Contributing to the Local Communities Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#e5f3f9] md:bg-white my-10"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white my-10"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -117,11 +118,11 @@ export default function RealEstatePresence() {
 
                             {/* Text Section */}
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-3xl font-bold text-black mb-6 leading-tight">
+                                <h1 className="text-3xl font-bold text-white mb-6 leading-tight">
                                     Contributing <br />to the <br />local communities
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                                     We are actively involved in the communities in which we operate&#8211;creating jobs,
                                     contributing to local talents by ensuring white collar jobs.
                                 </p>
@@ -139,22 +140,22 @@ export default function RealEstatePresence() {
                         whileInView="visible"
                         transition={transition}
                     >
-                        <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
+                        <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
                                 <img
-                                    src="/static/Assets/local2.jpg"
+                                    src="/static/Assets/local3.jpg"
                                     alt="Living Room"
                                     className="shadow-md"
                                     style={{ objectFit: "cover", width: "100%", height: "100%" }}
                                 />
                             </div>
 
-                            <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-5xl font-bold text-black mb-6 leading-tight">
+                            <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center ">
+                                <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                                     Local Insights
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                                     Our on&#8211;the&#8211;ground presence in key locations around the city gives us knowledge of
                                     local market conditions and trends, as well as access to proprietary deal flow.
                                 </p>
@@ -162,9 +163,14 @@ export default function RealEstatePresence() {
                         </div>
 
                         {/* Dual Color Background */}
-                        <div className="absolute inset-0 flex">
-                            <div className="w-[30%] h-full bg-white"></div>
-                            <div className="w-[70%] h-full bg-[#e5f3f9]"></div>
+
+                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[35%_65%] h-full">
+                            {/* First Row - Two Columns */}
+                            <div className="bg-white"></div>
+                            <div className="bg-[#4c0018]"></div>
+
+                            {/* Second Row - Single Column Spanning Two Columns */}
+                            <div className="bg-white col-span-2"></div>
                         </div>
                     </motion.div>
 
@@ -176,13 +182,13 @@ export default function RealEstatePresence() {
                         whileInView="visible"
                         transition={transition}
                     >
-                        <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
-                            <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-7xl font-bold text-black mb-6 leading-tight">
+                        <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
+                            <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center ">
+                                <h1 className="text-white text-7xl font-bold mb-6 leading-tight">
                                     Strategic <br />Flexibility
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-white text-lg mb-6 leading-relaxed">
                                     Quickly scaling up to put our Real estate ideas into action, allows us to allocate
                                     luxury properties where it is otherwise scarce, acquire intellectual assets for
                                     effective deal closures and leverage our operating expertise, enhancing the value of
@@ -200,9 +206,14 @@ export default function RealEstatePresence() {
                         </div>
 
                         {/* Dual Color Background */}
-                        <div className="absolute inset-0 flex">
-                            <div className="w-[70%] h-full bg-[#e5f3f9]"></div>
-                            <div className="w-[30%] h-full bg-white"></div>
+
+                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[65%_35%] h-full">
+                            {/* First Row - Two Columns */}
+                            <div className="bg-[#4c0018]"></div>
+                            <div className="bg-white"></div>
+
+                            {/* Second Row - Single Column Spanning Two Columns */}
+                            <div className="bg-white col-span-2"></div>
                         </div>
                     </motion.div>
 
@@ -214,7 +225,7 @@ export default function RealEstatePresence() {
                         whileInView="visible"
                         transition={transition}
                     >
-                        <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
+                        <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
                                 <img
                                     src="/static/Assets/professionals1.jpg"
@@ -225,11 +236,11 @@ export default function RealEstatePresence() {
                             </div>
 
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
-                                <h1 className="text-5xl font-bold text-black mb-6 leading-tight">
+                                <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
                                     Contributing <br />to the <br />local communities
                                 </h1>
-                                <div className="border-b-2 border-black w-24 mb-6"></div>
-                                <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                <div className="border-b-2 border-white w-24 mb-6"></div>
+                                <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                                     We are actively involved in the communities in which we operate&#8211;creating jobs,
                                     contributing to local talents by ensuring white collar jobs.
                                 </p>
@@ -237,12 +248,18 @@ export default function RealEstatePresence() {
                         </div>
 
                         {/* Dual Color Background */}
-                        <div className="absolute inset-0 flex">
-                            <div className="w-[30%] h-full bg-white"></div>
-                            <div className="w-[70%] h-full bg-[#e5f3f9]"></div>
+
+                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[35%_65%] h-full">
+                            {/* First Row - Two Columns */}
+                            <div className="bg-white"></div>
+                            <div className="bg-[#4c0018]"></div>
+
+                            {/* Second Row - Single Column Spanning Two Columns */}
+                            <div className="bg-white col-span-2"></div>
                         </div>
                     </motion.div>
                 </div>
+
             )}
         </>
     );
