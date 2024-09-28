@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const fadeIn = {
-    hidden: { opacity: 0, y: 150 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
 };
 
@@ -44,8 +44,8 @@ export default function RealEstatePresence() {
 
 
     const images1 = ['/static/Assets/local4.jpg', '/static/Assets/local2.jpg', '/static/Assets/local6.jpg'];
-    const images2 = ['/static/Assets/ideas.jpg','/static/Assets/ideas2.jpg', '/static/Assets/ideas4.jpg'];
-    const images3 = ['/static/Assets/community1.jpg','/static/Assets/community2.jpg', '/static/Assets/community3.jpg'];
+    const images2 = ['/static/Assets/ideas.jpg', '/static/Assets/ideas2.jpg', '/static/Assets/ideas4.jpg'];
+    const images3 = ['/static/Assets/community1.jpg', '/static/Assets/community2.jpg', '/static/Assets/community3.jpg'];
 
 
     return (
@@ -54,7 +54,7 @@ export default function RealEstatePresence() {
                 <div className="bg-[#4c0018]">
                     {/* Local Insights Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white my-10"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center bg-[#4c0018] md:bg-white my-1"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -63,12 +63,25 @@ export default function RealEstatePresence() {
                         <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
                             {/* Image Section */}
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
-                                    src="/static/Assets/local2.jpg"
-                                    alt="Living Room"
-                                    className="shadow-md"
-                                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                                <div style={{ position: 'relative', width: '100%', height: '400px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images1[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
 
                             {/* Text Section */}
@@ -87,7 +100,7 @@ export default function RealEstatePresence() {
 
                     {/* Strategic Flexibility Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center bg-[#4c0018] md:bg-white"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -96,12 +109,25 @@ export default function RealEstatePresence() {
                         <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
                             {/* Image Section */}
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
-                                    src="/static/Assets/ideas.jpg"
-                                    alt="Living Room"
-                                    className="shadow-md"
-                                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                                <div style={{ position: 'relative', width: '100%', height: '400px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images2[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
 
                             {/* Text Section */}
@@ -122,7 +148,7 @@ export default function RealEstatePresence() {
 
                     {/* Contributing to the Local Communities Section */}
                     <motion.div
-                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center py-12 bg-[#4c0018] md:bg-white my-10"
+                        className="relative min-h-screen flex flex-col md:flex-row justify-center items-center bg-[#4c0018] md:bg-white my-1"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -131,12 +157,25 @@ export default function RealEstatePresence() {
                         <div className="max-w-5xl w-full grid grid-cols-12 overflow-hidden z-10">
                             {/* Image Section */}
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
-                                    src="/static/Assets/professionals1.jpg"
-                                    alt="Living Room"
-                                    className="shadow-md"
-                                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                                <div style={{ position: 'relative', width: '100%', height: '400px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images3[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
 
                             {/* Text Section */}
@@ -238,7 +277,7 @@ export default function RealEstatePresence() {
                                 </p>
                             </div>
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                            <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
+                                <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
                                     <AnimatePresence initial={false} custom={direction}>
                                         <motion.img
                                             key={index}
@@ -282,7 +321,7 @@ export default function RealEstatePresence() {
                     >
                         <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                            <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
+                                <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
                                     <AnimatePresence initial={false} custom={direction}>
                                         <motion.img
                                             key={index}
