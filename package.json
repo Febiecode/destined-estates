@@ -28,7 +28,8 @@
     "react-parallax": "^3.5.1",
     "react-scroll": "^1.9.0",
     "react-scroll-parallax": "^3.4.5",
-    "react-spring": "^9.7.4"
+    "react-spring": "^9.7.4",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "eslint": "^8",

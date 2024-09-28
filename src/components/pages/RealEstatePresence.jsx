@@ -1,6 +1,7 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+// import { motion } from 'framer-motion';
+// import { useTransition, animated } from '@react-spring/web';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const fadeIn = {
     hidden: { opacity: 0, y: 150 },
@@ -23,8 +24,30 @@ const useSmallScreen = () => {
     return isSmallScreen;
 };
 
+
 export default function RealEstatePresence() {
     const isSmallScreen = useSmallScreen();
+
+    const [index, setIndex] = useState(0);
+    const [direction, setDirection] = useState(4);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDirection(1); // Set direction for motion
+            setIndex((prevIndex) => (prevIndex + 1) % 3);
+        }, 3000); // Change image every 3 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+
+
+    const images1 = ['/static/Assets/local4.jpg', '/static/Assets/local2.jpg', '/static/Assets/local6.jpg'];
+    const images2 = ['/static/Assets/ideas.jpg','/static/Assets/ideas2.jpg', '/static/Assets/ideas4.jpg'];
+    const images3 = ['/static/Assets/community1.jpg','/static/Assets/community2.jpg', '/static/Assets/community3.jpg'];
+
+
     return (
         <>
             {isSmallScreen ? (
@@ -134,7 +157,7 @@ export default function RealEstatePresence() {
                 <div>
                     {/* Local Insights Section */}
                     <motion.div
-                        className="relative min-h-screen flex justify-center items-center py-12 bg-white my-10"
+                        className="relative min-h-screen flex justify-center items-center py-12 my-10"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -142,12 +165,31 @@ export default function RealEstatePresence() {
                     >
                         <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
+                                {/* <img
                                     src="/static/Assets/local3.jpg"
                                     alt="Living Room"
                                     className="shadow-md"
                                     style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                                /> */}
+                                <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images1[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
 
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center ">
@@ -164,7 +206,7 @@ export default function RealEstatePresence() {
 
                         {/* Dual Color Background */}
 
-                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[35%_65%] h-full">
+                        <div className="absolute inset-0 grid grid-rows-[80%_30%] grid-cols-[35%_65%] w-full h-full">
                             {/* First Row - Two Columns */}
                             <div className="bg-white"></div>
                             <div className="bg-[#4c0018]"></div>
@@ -176,7 +218,7 @@ export default function RealEstatePresence() {
 
                     {/* Strategic Flexibility Section */}
                     <motion.div
-                        className="relative min-h-screen flex justify-center items-center py-12 bg-white"
+                        className="relative min-h-screen flex justify-center items-center py-12 "
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -196,18 +238,31 @@ export default function RealEstatePresence() {
                                 </p>
                             </div>
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
-                                    src="/static/Assets/ideas.jpg"
-                                    alt="Living Room"
-                                    className="shadow-md"
-                                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                            <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images2[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
                         </div>
 
                         {/* Dual Color Background */}
 
-                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[65%_35%] h-full">
+                        <div className="w-full h-full absolute inset-0 grid grid-rows-[80%_30%] grid-cols-[65%_35%]">
                             {/* First Row - Two Columns */}
                             <div className="bg-[#4c0018]"></div>
                             <div className="bg-white"></div>
@@ -219,7 +274,7 @@ export default function RealEstatePresence() {
 
                     {/* Contributing to the Local Communities Section */}
                     <motion.div
-                        className="relative min-h-screen flex justify-center items-center py-12 bg-white my-10"
+                        className="relative min-h-screen flex justify-center items-center py-12  my-10"
                         variants={fadeIn}
                         initial="hidden"
                         whileInView="visible"
@@ -227,12 +282,25 @@ export default function RealEstatePresence() {
                     >
                         <div className="max-w-7xl w-full grid grid-cols-12 overflow-hidden z-10">
                             <div className="col-span-12 md:col-span-6 flex justify-center items-center">
-                                <img
-                                    src="/static/Assets/professionals1.jpg"
-                                    alt="Living Room"
-                                    className="shadow-md"
-                                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
-                                />
+                            <div style={{ position: 'relative', width: '100%', height: '900px', overflow: 'hidden' }}>
+                                    <AnimatePresence initial={false} custom={direction}>
+                                        <motion.img
+                                            key={index}
+                                            src={images3[index]}
+                                            initial={{ x: direction === 1 ? '100%' : '-100%' }}
+                                            animate={{ x: 0 }}
+                                            exit={{ x: direction === 1 ? '-100%' : '100%' }}
+                                            transition={{ duration: 1 }} // Adjust duration for smoother transitions
+                                            style={{
+                                                position: 'absolute',
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                            }}
+                                            alt={`Slide ${index}`}
+                                        />
+                                    </AnimatePresence>
+                                </div>
                             </div>
 
                             <div className="col-span-12 md:col-span-6 p-4 lg:p-8 flex flex-col justify-center">
@@ -249,7 +317,7 @@ export default function RealEstatePresence() {
 
                         {/* Dual Color Background */}
 
-                        <div className="absolute inset-0 grid grid-rows-[80%_20%] grid-cols-[35%_65%] h-full">
+                        <div className="absolute inset-0 grid grid-rows-[80%_25%] grid-cols-[35%_65%] ">
                             {/* First Row - Two Columns */}
                             <div className="bg-white"></div>
                             <div className="bg-[#4c0018]"></div>
