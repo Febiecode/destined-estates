@@ -17,5 +17,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // function ({ addUtilities }) {
+    //   const newUtilities = {
+    //     '::selection': {
+    //       backgroundColor: '#00bfff', // Tailwind color for background
+    //       color: '#ffffff',           // Tailwind color for text
+    //     },
+    //   }
+    //   addUtilities(newUtilities, ['responsive'])
+    // }
+  ],
 };
