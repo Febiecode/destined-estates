@@ -100,7 +100,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#a36a43] text-3xl lg:text-4xl font-bold mb-4 text-left">Our Professionals</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600">
-                                We know a real estate brokerage is only as good as its agents, and Destined Estates has the industry's best and brightest, carrying the flag of exceptionalism in our markets and across the country. Wherever you've set your insights, we're there.
+                                We know a real estate brokerage is only as good as its agents, and Destined Estates has the industry&apos;s best and brightest, carrying the flag of exceptionalism in our markets and across the country. Wherever you&apos;ve set your insights, we&apos;re there.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
@@ -131,7 +131,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#a49e91] text-3xl lg:text-4xl font-bold mb-4 text-left">Our Promise</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600">
-                                Destined estate agents are backed by one of the real estate industry's most experienced and effective marketing teams, whose innovative campaigns and sophisticated advertising programs ensure the broadest exposure for our client's homes. For you, that means more buzz, bigger offers, and quicker closings.
+                                Destined estate agents are backed by one of the real estate industry&apos;s most experienced and effective marketing teams, whose innovative campaigns and sophisticated advertising programs ensure the broadest exposure for our client&apos;s homes. For you, that means more buzz, bigger offers, and quicker closings.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
@@ -162,7 +162,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#53504b] text-3xl lg:text-4xl font-bold mb-4 text-left">Our Values</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600">
-                                From starting the conversation to sealing the deal, your Destined Estates agent is committed to earning and keeping your trust forever. We're part of anywhere, a true leader in residential luxury real estate.
+                                From starting the conversation to sealing the deal, your Destined Estates agent is committed to earning and keeping your trust forever. We&apos;re part of anywhere, a true leader in residential luxury real estate.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
@@ -224,7 +224,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#dd344e] text-3xl lg:text-4xl font-bold mb-4 text-left">Sell Your Home With Destined Estates</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600 ">
-                                Whether you're ready to sell or just looking for answers, one of Destined Estates' experienced neighborhood real estate experts can help.
+                                Whether you&apos;re ready to sell or just looking for answers, one of Destined Estates&apos; experienced neighborhood real estate experts can help.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
@@ -255,7 +255,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#503026] text-3xl lg:text-4xl font-bold mb-4 text-left">Streetwise and Market smart</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600">
-                                In your neighborhood and across the city, nobody understands the residential real estate scene like Destined Estates. Whether you're buying, renting, or selling, when you connect with a Destined Estates professional, you're working with the best in the business.
+                                In your neighborhood and across the city, nobody understands the residential real estate scene like Destined Estates. Whether you&apos;re buying, renting, or selling, when you connect with a Destined Estates professional, you&apos;re working with the best in the business.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
@@ -286,7 +286,7 @@ export default function WhyDestinedEstates() {
                         <div className="lg:w-1/2 p-5">
                             <h2 className="text-[#264a74] text-3xl lg:text-4xl font-bold mb-4 text-left">Our Name is a Name that Opens Doors</h2>
                             <p className="text-lg md:text-lg lg:text-xl !leading-relaxed text-gray-600">
-                                Discover our international standards luxury real estate company and get to know one of the industry's most recognized and respected brand names. Our professionals specialize in market intelligence and client satisfaction.
+                                Discover our international standards luxury real estate company and get to know one of the industry&apos;s most recognized and respected brand names. Our professionals specialize in market intelligence and client satisfaction.
                             </p>
                         </div>
                         <div className="w-full md:w-full lg:w-1/2 md:p-5 overflow-hidden">
