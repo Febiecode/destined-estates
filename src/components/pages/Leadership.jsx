@@ -44,7 +44,7 @@ const Leadership = () => {
             <p className='text-lg md:text-xl text-gray-700 !leading-relaxed'>
               As the founder of Destined Estates (OPC) Private Limited, Rufus is a dominant force within
               the Chennai Luxury real estate community. Having done his college education in
-              Switzerland and following it up with an employment in a multi-million-dollar golf club in
+              Switzerland and following it up with an employment in a multi&#8211;million&#8211;dollar golf club in
               New York, United States of America, Rufus has built his expertise in business from a
               western point of view working alongside Americans and people from all around the world,
               quickly mastering the art of buying, selling, and investing real estate.
@@ -79,8 +79,8 @@ const Leadership = () => {
           >
             <p className='text-lg md:text-xl text-gray-700 !leading-relaxed'>
               Rufus specializes in selling and marketing some of the finest and most iconic residential
-              properties to his connections and network of high-net-worth individuals. His
-              uncompromising professionalism and tenacious drive have yielded his unheard-of rapid
+              properties to his connections and network of high&#8211;net&#8211;worth individuals. His
+              uncompromising professionalism and tenacious drive have yielded his unheard&#8211;of rapid
               rise in the luxury real estate industry.
             </p>
           </motion.div>
@@ -99,7 +99,7 @@ const Leadership = () => {
               his own team of seasoned professionals. In 2023, Rufus had expanded his more than a
               decade + years of experience into an elite real estate firm named Destined Estates (OPC)
               Private Limited. Today Destined Estates exists to serve the elite clientele from all around
-              the world, to cater to their luxury property needs and wants. Rufus's passion for teaching
+              the world, to cater to their luxury property needs and wants. Rufus&#39;s passion for teaching
               others how to achieve success is realized through his team of highly coveted agents.
             </p>
           </motion.div>
