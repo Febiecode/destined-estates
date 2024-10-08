@@ -15,7 +15,7 @@ const page = () => {
                 <div className="relative w-full h-[250px] overflow-hidden mb-1">
                     <div className="relative w-full flex transition-transform ease-in-out duration-1000">
                         <div className="w-full flex-shrink-0">
-                            <img src="/static/Assets/leadership.jpg" alt="who we are" className="w-full h-[300px] md:h-full  object-cover object-center" />
+                            <img src="/static/Assets/leadership1.jpg" alt="who we are" className='object-center' style={{ objectFit: "cover", width: "100%", height: "100%" }} />
                             {/* Dark overlay on top of the image */}
                             <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                         </div>
