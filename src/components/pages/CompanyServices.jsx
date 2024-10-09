@@ -55,13 +55,13 @@ const CompanyServices = () => {
                         Steps to Buy Your Dream Home
                     </h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                        Buying a home is a major life event, whether it's your first or your fifth.
+                        Buying a home is a major life event, whether it&#39;s your first or your fifth.
                         With the right guidance from our trusted Destined professionals, you can navigate
                         the process with confidence, making informed decisions every step of the way.
                     </p>
                     <p className="text-lg text-gray-600 leading-relaxed">
                         From setting a budget to signing on the dotted line, our experts break down the
-                        home-buying process into clear, actionable steps. We're with you all the way to make
+                        home-buying process into clear, actionable steps. We&#39;re with you all the way to make
                         your journey as smooth and enjoyable as possible.
                     </p>
                     <ul className="list-disc space-y-3 text-gray-700 pl-6">
