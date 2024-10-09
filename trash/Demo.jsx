@@ -217,6 +217,71 @@ const WhoWeAre = () => {
                 </section>
 
 
+                {/* Marketing Your Property Section */}
+      <section className="text-center space-y-10">
+        <div>
+          <h2 className="text-4xl font-bold text-gray-900">Marketing Your Property</h2>
+          <p className="text-gray-600 mt-4">
+            Our Destined agents have access to advanced technology and marketing strategies, and
+            have the knowledge and expertise to help sell your home. A few highlights include:
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Online Listing */}
+          <div className="p-6 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <Image
+              src="/static/Assets/online-listing.jpg" // Ensure this path is correct
+              alt="Online Listing for your home"
+              width={600}
+              height={400}
+              className="rounded-md mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-gray-800">Online Listing for your home</h3>
+            <p className="text-gray-600">
+              Online listings feature information specific to each property and the surrounding area, as
+              well as a property image. An invaluable marketing tool, the property images give potential
+              buyers an instant preview, which saves time and visually sparks interest.
+            </p>
+          </div>
+
+          {/* Mobile Presence */}
+          <div className="p-6 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <Image
+              src="/static/Assets/mobile-presence.jpg" // Ensure this path is correct
+              alt="Mobile Presence"
+              width={600}
+              height={400}
+              className="rounded-md mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-gray-800">Mobile Presence</h3>
+            <p className="text-gray-600">
+              Prospective buyers will be able to access the same great search technology available on
+              our website while on the go! Our website markets your property and our digital marketing
+              campaign will ensure your property reaches to the elite buyers that you so desire.
+            </p>
+          </div>
+
+          {/* Advanced Marketing */}
+          <div className="p-6 border rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <Image
+              src="/static/Assets/advanced-marketing.jpg" // Ensure this path is correct
+              alt="Advanced Marketing"
+              width={600}
+              height={400}
+              className="rounded-md mb-4"
+            />
+            <h3 className="text-2xl font-semibold text-gray-800">Advanced Marketing</h3>
+            <p className="text-gray-600">
+              We have advanced marketing and digital strategies that can help drive more traffic to your
+              listing. The Destined network of agents is one of the greatest in the country and can be a
+              great resource for spreading the word about your property by word of mouth, online
+              marketing, and other advertising opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
 
         </>
     )

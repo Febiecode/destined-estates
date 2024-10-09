@@ -13,7 +13,7 @@ const headerNavLinks = [
         href: '/our-commitment',
         title: 'Our Commitment',
         links: [
-            { href: '/our-business-integration-structure', title: 'Our business integration structure' },
+            // { href: '/our-business-integration-structure', title: 'Our business integration structure' },
             { href: '/company-services', title: 'Services by the company' },
         ],
     },
