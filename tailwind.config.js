@@ -14,6 +14,8 @@ module.exports = {
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        tiempos: ['Tiempos Fine', 'serif'],
       },
     },
   },
